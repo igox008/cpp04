@@ -6,7 +6,7 @@
 /*   By: alaassir <alaassir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 00:51:16 by alaassir          #+#    #+#             */
-/*   Updated: 2024/06/16 03:27:41 by alaassir         ###   ########.fr       */
+/*   Updated: 2024/06/16 04:06:46 by alaassir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,17 +53,6 @@ int main()
         // delete meta;
         delete i;
         delete j;
-    }
-    {
-        std::cout << "\n------------------WrongAAnimal test-------------\n";
-        const WrongAnimal *test = new WrongAnimal();
-        const WrongAnimal *a = new WrongCat();
-        std::cout << test->getType() << " " << std::endl;
-        std::cout << a->getType() << " " << std::endl;
-        test->makeSound();
-        a->makeSound();
-        delete test;
-        delete a;
     }
     return 0;
 }
