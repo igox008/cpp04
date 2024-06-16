@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alaassir <alaassir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/14 22:29:37 by alaassir          #+#    #+#             */
-/*   Updated: 2024/06/16 02:39:57 by alaassir         ###   ########.fr       */
+/*   Created: 2024/06/14 22:29:47 by alaassir          #+#    #+#             */
+/*   Updated: 2024/06/16 03:24:21 by alaassir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#ifndef DOG_HPP
+# define DOG_HPP
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Brain.hpp"
 
-class Cat : public Animal
+class Dog : public AAnimal
 {
 	private:
 		Brain	*_brain;
-	public:
-		Cat();
-		Cat(const Cat &c);
-		~Cat();
+    public:
+		Dog();
+		Dog(const Dog &d);
+		~Dog();
 
-		Cat	&operator=(const Cat &c);
+		Dog	&operator=(const Dog &d);
 
 		void makeSound() const;
 		std::string getType() const;
-};
 
+};
 
 #endif

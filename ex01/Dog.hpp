@@ -6,7 +6,7 @@
 /*   By: alaassir <alaassir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 22:29:47 by alaassir          #+#    #+#             */
-/*   Updated: 2024/06/16 01:44:39 by alaassir         ###   ########.fr       */
+/*   Updated: 2024/06/16 02:40:01 by alaassir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Dog : public Animal
     public:
 		Dog();
 		Dog(const Dog &d);
-		virtual ~Dog();
+		~Dog();
 
 		Dog	&operator=(const Dog &d);
 

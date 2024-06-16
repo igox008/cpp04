@@ -1,55 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   WrongCat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alaassir <alaassir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 22:51:38 by alaassir          #+#    #+#             */
-/*   Updated: 2024/06/16 02:45:00 by alaassir         ###   ########.fr       */
+/*   Updated: 2024/06/14 22:56:42 by alaassir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "WrongCat.hpp"
 
-Cat::Cat()
+WrongCat::WrongCat()
 {
-	std::cout << "Cat Default constructor is called\n";
-	this->type = "Cat";
-	this->_brain = new Brain();
-	for (size_t i = 0; i < 100;i++)
-		this->_brain->setIdea(i, "Cats loves Fish");
+	std::cout << "WrongCat Default constructor is called\n";
+	this->type = "WrongCat";
 }
 
-Cat	&Cat::operator=(const Cat &c)
+WrongCat	&WrongCat::operator=(const WrongCat &c)
 {
-	std::cout << "Cat assignement operator is called\n";
-	if (this == &c)
-		return (*this);
+	std::cout << "WrongCat assignement operator is called\n";
 	this->type = c.type;
-	delete this->_brain;
-	this->_brain = new Brain(*c._brain);
-	return (*this);
+	return (*this);	
 }
 
-Cat::Cat(const Cat &c)
+WrongCat::WrongCat(const WrongCat &c)
 {
-	std::cout << "Cat copy constructor is called\n";
+	std::cout << "WrongCat copy constructor is called\n";
 	*this = c;
 }
 
-Cat::~Cat()
+WrongCat::~WrongCat()
 {
-	std::cout << "Cat desstructor is called\n";
-	delete this->_brain;
+	std::cout << "WrongCat desstructor is called\n";	
 }
 
-void	Cat::makeSound() const
+void	WrongCat::makeSound() const
 {
 	std::cout << "Meoow Meoooooow\n";
 }
 
-std::string	Cat::getType() const
+std::string	WrongCat::getType() const
 {
 	return (this->type);
 }

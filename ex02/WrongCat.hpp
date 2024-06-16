@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongWrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alaassir <alaassir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 22:29:37 by alaassir          #+#    #+#             */
-/*   Updated: 2024/06/16 02:39:57 by alaassir         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:55:52 by alaassir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#ifndef WrongCat_HPP
+# define WrongCat_HPP
 
-#include "Animal.hpp"
-#include "Brain.hpp"
+#include "WrongAnimal.hpp"
 
-class Cat : public Animal
+class WrongCat : public WrongAnimal
 {
-	private:
-		Brain	*_brain;
 	public:
-		Cat();
-		Cat(const Cat &c);
-		~Cat();
+		WrongCat();
+		WrongCat(const WrongCat &c);
+		~WrongCat();
 
-		Cat	&operator=(const Cat &c);
+		WrongCat	&operator=(const WrongCat &c);
 
 		void makeSound() const;
-		std::string getType() const;
+		std::string getType() const;;
 };
 
 
