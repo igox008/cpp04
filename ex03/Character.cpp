@@ -83,16 +83,8 @@ void    Character::equip(AMateria *m)
 
 void    Character::unequip(int idx)
 {
-    static AMateria *m;
-    // if (m)
-    // {
-        // delete m;
-        // m = NULL;
-    // }
-    (void)m;
     if (idx >= 0 && idx < 4 && this->invetory[idx])
     {
-        m = this->invetory[idx];
         this->invetory[idx] = NULL;
     }
 }

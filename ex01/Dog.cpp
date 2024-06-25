@@ -6,7 +6,7 @@
 /*   By: alaassir <alaassir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 22:56:49 by alaassir          #+#    #+#             */
-/*   Updated: 2024/06/16 02:44:25 by alaassir         ###   ########.fr       */
+/*   Updated: 2024/06/25 11:53:34 by alaassir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ Dog	&Dog::operator=(const Dog &d)
 Dog::Dog(const Dog &d)
 {
 	std::cout << "Dog copy constructor is called\n";
+	this->_brain = NULL;
 	*this = d;
 }
 

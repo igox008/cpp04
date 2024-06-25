@@ -6,7 +6,7 @@
 /*   By: alaassir <alaassir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 22:51:38 by alaassir          #+#    #+#             */
-/*   Updated: 2024/06/16 02:45:00 by alaassir         ###   ########.fr       */
+/*   Updated: 2024/06/25 11:52:47 by alaassir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ Cat	&Cat::operator=(const Cat &c)
 Cat::Cat(const Cat &c)
 {
 	std::cout << "Cat copy constructor is called\n";
+	this->_brain = NULL;
 	*this = c;
 }
 
